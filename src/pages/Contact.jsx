@@ -1,15 +1,9 @@
-import React from 'react';
+import React from 'react'
 
-const Navbar = () => {
-
+const Contact = () => {
   return (
-    <>
-    <h1 className="text-3xl font-bold underline">
-      Contact here...
-    </h1>
-
-    </>
+    <div>Contact</div>
   )
 }
 
-export default Navbar
+export default Contact

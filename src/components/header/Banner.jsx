@@ -1,54 +1,24 @@
-// import React from 'react';
-
-// const Banner = () => {
-//   return (
-//     <div className="bg-black text-white text-center font-sans py-2 flex justify-between items-center px-4">
-//       <div className="text-center flex-grow">
-//         Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!&nbsp;
-//         <a 
-//           href="" 
-//           target="_blank" 
-//           rel="noopener noreferrer" 
-//           className="underline hover:underline-offset-4 "
-//         >
-//           ShopNow
-//         </a>
-//       </div>
-//       <div className="flex-none mr-32">
-//         <select className="bg-black text-white border-none ">
-//           <option value="en">English</option>
-//           <option value="ने">नेपाली</option>
-//           <option value="es">Español</option>
-//           <option value="fr">Français</option>
-//           <option value="de">Deutsch</option>
-//         </select>
-//       </div>
-
-      
-//     </div>
-//   );
-// }
-
-// export default Banner;
-
 import React from 'react';
+import { Link } from 'react-router-dom';
+{/* <div className="bg-black text-[rgba(255,255,255,0.9)] font-sans font-normal text-[12px] leading-[16px] py-3  flex justify-between items-center pl-10 pr-2"> */}
+
 
 const Banner = () => {
   return (
-    <div className="bg-black text-white text-center font-sans py-2 flex flex-col sm:flex-row justify-between items-center px-4">
-      <div className="text-center flex-grow mb-2 sm:mb-0">
+<div className="flex bg-black text-[rgba(255,255,255,0.9)] h-8 font-inter text-[12px] items-center ]">
+   <div className="text-center flex-grow space-x-1  ml-28 ">
         Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!&nbsp;
-        <a 
-          href="#" 
+        <Link 
+          to="" 
           target="_blank" 
           rel="noopener noreferrer" 
-          className="underline hover:underline-offset-4"
+          className="underline hover:underline-offset-4 "
         >
-          Shop Now
-        </a>
+          ShopNow
+        </Link>
       </div>
-      <div className="flex-none sm:mr-32">
-        <select className="bg-black text-white border-none">
+      <div className="flex-none text-center mr-28 ">
+        <select className="bg-black text-white border-none ">
           <option value="en">English</option>
           <option value="ने">नेपाली</option>
           <option value="es">Español</option>
@@ -56,8 +26,11 @@ const Banner = () => {
           <option value="de">Deutsch</option>
         </select>
       </div>
+
+      
     </div>
-  );
+  )
 }
 
 export default Banner;
+
