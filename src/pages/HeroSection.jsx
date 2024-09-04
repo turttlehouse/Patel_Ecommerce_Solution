@@ -1,6 +1,7 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   const items = [
@@ -40,12 +41,12 @@ const HeroSection = () => {
         <ul className="space-y-1">
           {items.map((item, index) => (
             <li key={index} className="list-none">
-              <a
+              <Link
                 href={`#${item.replace(/\s+/g, "-").toLowerCase()}`}
                 className="block p-1 hover:bg-blue-500 hover:text-white transition rounded"
               >
                 {item}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
@@ -60,7 +61,7 @@ const HeroSection = () => {
           showDots={true}
           infinite={true}
           autoPlay={true}
-          autoPlaySpeed={3000}
+          autoPlaySpeed={1000}
           keyBoardControl={true}
           customTransition="all .5"
           transitionDuration={500}
@@ -75,7 +76,7 @@ const HeroSection = () => {
           ></div>
           <div
             className="h-72 bg-cover bg-center"
-            style={{ backgroundImage: `url('https://images.unsplash.com/photo-1555685812-4b743c6e0c54?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDEzfHxkb2d8ZW58MHx8fHwxNjE3NzA0NjI5&ixlib=rb-1.2.1&q=80&w=1080')` }}
+            style={{ backgroundImage: `url('https://images.unsplash.com/photo-1518791841217-8f162f1e1131?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDJ8fGxpb258ZW58MHx8fHwxNjE3NzA0Mzg4&ixlib=rb-1.2.1&q=80&w=1080')` }}
           ></div>
           <div
             className="h-72 bg-cover bg-center"
