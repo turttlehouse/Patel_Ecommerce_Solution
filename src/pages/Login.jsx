@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 
 
 
-const Signup = () => {
+const Login = () => {
     return (
         <div className="flex items-center">
             {/* Left Section */}
@@ -86,4 +86,4 @@ const Signup = () => {
     );
 };
 
-export default Signup;
+export default Login;
