@@ -35,15 +35,15 @@ const HeroSection = () => {
   };
 
   return (
-    <div className="container mx-auto flex flex-wrap">
+    <div className="mt-20 mx-28 flex flex-wrap">
       {/* Listing Section */}
-      <div className="w-full md:w-4/12 p-4">
-        <ul className="space-y-1">
+      <div className="w-full md:w-4/12">
+        <ul className="space-y-2">
           {items.map((item, index) => (
             <li key={index} className="list-none">
               <Link
                 href={`#${item.replace(/\s+/g, "-").toLowerCase()}`}
-                className="block p-1 hover:bg-blue-500 hover:text-white transition rounded"
+                className="block  hover:bg-blue-500 hover:text-white transition rounded"
               >
                 {item}
               </Link>
@@ -53,7 +53,7 @@ const HeroSection = () => {
       </div>
 
       {/* Hero Section */}
-      <div className="w-full md:w-8/12 h-full">
+      <div className="w-full  md:w-8/12 h-full">
         <Carousel
           responsive={responsive}
           swipeable={true}
@@ -66,7 +66,7 @@ const HeroSection = () => {
           customTransition="all .5"
           transitionDuration={500}
           containerClass="carousel-container"
-          removeArrowOnDeviceType={["tablet", "mobile"]}
+          removeArrowOnDeviceType={["tablet", "mobile" ,"desktop"]}
           dotListClass="custom-dot-list-style"
           itemClass="carousel-item-padding-40-px"
         >
